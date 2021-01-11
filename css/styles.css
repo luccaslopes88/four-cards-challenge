@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+/* Neutral colors */
+--veryDarkBlue: hsl(234, 12%, 34%);
+--grayishBlue: hsl(229, 6%, 66%);
+--veryLightGray: hsl(0, 0%, 98%);
+ 
+
+}
+
+body {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins";
+ background-color: var(--veryLightGray);
+ font-size: 15px;
+ line-height: 1.75;
+}
+
+h1 {
+ font-weight: 200;
+ color: var(--grayishBlue);
+ font-size: 1.5rem;
+}
+
+span {
+ font-weight: 600;
+ color: var(--veryDarkBlue);
+}
+
+header p {
+ color: var(--grayishBlue);
+}
+
+header {
+ text-align: center;
+ width: 80vw;
+ text-align: center;
+ margin-left: 10vw;
+ margin-top: 15vh;
+ margin-bottom: 15vh;
+}
+
+.cards {
+ width: 300px;
+ margin-left: 10vw;
+ 
+}
+
+.card {
+ background: white;
+ border-radius: 7px;
+ color: var(--veryDarkBlue);
+ box-shadow:3px 3px 10px ;
+ position: relative;
+ margin-bottom: 3rem;
+ height: 200px;
+}
+
+.card p {
+ color: var(--grayishBlue);
+}
+
+.card-1 {
+ border-top: 5px solid var(--Cyan) ;
+}
+.card-2 {
+ border-top: 5px solid var(--Red) ;
+}
+.card-3 {
+ border-top: 5px solid var(--Orange) ;
+}
+.card-4 {
+ border-top: 5px solid var(--Blue) ;
+}
+
+.text-card {
+ width: 87%;
+ margin-left: 1rem;
+}
+
+.card img {
+ position: absolute;
+ left: 220px;
+ width: 16%;
+ bottom: 15px;
+}
+
+@media screen and (min-width:500px) {
+ header {
+  width: 30vw;
+  margin: 0 auto;
+  margin-top: 40px;
+ }
+
+ header h1 {
+  font-size: 2rem;
+ }
+
+ .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  column-gap: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+.card img {
+ position: absolute;
+}
+
+}
+
+@media screen and (min-width:992px) {
+ .card-1 {
+  
+ transform: translate(-7em, 8em);
+ }
+
+ .card-2 {
+  transform: translateX(-12em);
+ }
+
+ .card-3 {
+  transform: translate(16.75em,-1.5em);
+ }
+ .card-4 {
+  transform: translate(12em, -8.85em);
+ }
+
+
+ .attribution {
+  position: relative;
+  bottom: 5em;
+  text-align: center;
+ } 
+ }
